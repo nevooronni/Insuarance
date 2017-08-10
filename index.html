@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!--custom stylesheet-->
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+      <!--jquery-->
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">    
+      </script>
+
+      <script src="js/script.js"></script>
+      <title>Car insurance</title>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Car insurance</h1>
+
+        <p>To give you a quote, we need to know a little about you:</p>
+
+        <form id="insurance">
+          <label for="age">Age</label>
+          <input id="age" type="text">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+
+          <button type="submit" class="btn">Calculate my quote</button>
+        </form>
+
+        <div id="quote">
+          <p>You will have to pay $<span id="rate"></span> per month to get car insurance. You should probably just bike or take the bus.</p>
+        </div>
+      </div>
+    </body>
+  </html>
